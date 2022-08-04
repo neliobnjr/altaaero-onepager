@@ -1,0 +1,770 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title> Architects | Template </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+    <link rel="stylesheet" href="assets/css/A.bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/A.style.css">
+</head>
+
+<body>
+
+    <!--<div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <script data-pagespeed-no-defer>
+                        //<![CDATA[
+                        (function() {
+                            for (var g = "function" == typeof Object.defineProperties ? Object.defineProperty : function(b, c, a) {
+                                    if (a.get || a.set) throw new TypeError("ES3 does not support getters and setters.");
+                                    b != Array.prototype && b != Object.prototype && (b[c] = a.value)
+                                }, h = "undefined" != typeof window && window === this ? this : "undefined" != typeof global && null != global ? global : this, k = ["String", "prototype", "repeat"], l = 0; l < k.length - 1; l++) {
+                                var m = k[l];
+                                m in h || (h[m] = {});
+                                h = h[m]
+                            }
+                            var n = k[k.length - 1],
+                                p = h[n],
+                                q = p ? p : function(b) {
+                                    var c;
+                                    if (null == this) throw new TypeError("The 'this' value for String.prototype.repeat must not be null or undefined");
+                                    c = this + "";
+                                    if (0 > b || 1342177279 < b) throw new RangeError("Invalid count value");
+                                    b |= 0;
+                                    for (var a = ""; b;)
+                                        if (b & 1 && (a += c), b >>>= 1) c += c;
+                                    return a
+                                };
+                            q != p && null != q && g(h, n, {
+                                configurable: !0,
+                                writable: !0,
+                                value: q
+                            });
+                            var t = this;
+
+                            function u(b, c) {
+                                var a = b.split("."),
+                                    d = t;
+                                a[0] in d || !d.execScript || d.execScript("var " + a[0]);
+                                for (var e; a.length && (e = a.shift());) a.length || void 0 === c ? d[e] ? d = d[e] : d = d[e] = {} : d[e] = c
+                            };
+
+                            function v(b) {
+                                var c = b.length;
+                                if (0 < c) {
+                                    for (var a = Array(c), d = 0; d < c; d++) a[d] = b[d];
+                                    return a
+                                }
+                                return []
+                            };
+
+                            function w(b) {
+                                var c = window;
+                                if (c.addEventListener) c.addEventListener("load", b, !1);
+                                else if (c.attachEvent) c.attachEvent("onload", b);
+                                else {
+                                    var a = c.onload;
+                                    c.onload = function() {
+                                        b.call(this);
+                                        a && a.call(this)
+                                    }
+                                }
+                            };
+                            var x;
+
+                            function y(b, c, a, d, e) {
+                                this.h = b;
+                                this.j = c;
+                                this.l = a;
+                                this.f = e;
+                                this.g = {
+                                    height: window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight,
+                                    width: window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth
+                                };
+                                this.i = d;
+                                this.b = {};
+                                this.a = [];
+                                this.c = {}
+                            }
+
+                            function z(b, c) {
+                                var a, d, e = c.getAttribute("data-pagespeed-url-hash");
+                                if (a = e && !(e in b.c))
+                                    if (0 >= c.offsetWidth && 0 >= c.offsetHeight) a = !1;
+                                    else {
+                                        d = c.getBoundingClientRect();
+                                        var f = document.body;
+                                        a = d.top + ("pageYOffset" in window ? window.pageYOffset : (document.documentElement || f.parentNode || f).scrollTop);
+                                        d = d.left + ("pageXOffset" in window ? window.pageXOffset : (document.documentElement || f.parentNode || f).scrollLeft);
+                                        f = a.toString() + "," + d;
+                                        b.b.hasOwnProperty(f) ? a = !1 : (b.b[f] = !0, a = a <= b.g.height && d <= b.g.width)
+                                    }
+                                a && (b.a.push(e),
+                                    b.c[e] = !0)
+                            }
+                            y.prototype.checkImageForCriticality = function(b) {
+                                b.getBoundingClientRect && z(this, b)
+                            };
+                            u("pagespeed.CriticalImages.checkImageForCriticality", function(b) {
+                                x.checkImageForCriticality(b)
+                            });
+                            u("pagespeed.CriticalImages.checkCriticalImages", function() {
+                                A(x)
+                            });
+
+                            function A(b) {
+                                b.b = {};
+                                for (var c = ["IMG", "INPUT"], a = [], d = 0; d < c.length; ++d) a = a.concat(v(document.getElementsByTagName(c[d])));
+                                if (a.length && a[0].getBoundingClientRect) {
+                                    for (d = 0; c = a[d]; ++d) z(b, c);
+                                    a = "oh=" + b.l;
+                                    b.f && (a += "&n=" + b.f);
+                                    if (c = !!b.a.length)
+                                        for (a += "&ci=" + encodeURIComponent(b.a[0]), d = 1; d < b.a.length; ++d) {
+                                            var e = "," + encodeURIComponent(b.a[d]);
+                                            131072 >= a.length + e.length && (a += e)
+                                        }
+                                    b.i && (e = "&rd=" + encodeURIComponent(JSON.stringify(B())), 131072 >= a.length + e.length && (a += e), c = !0);
+                                    C = a;
+                                    if (c) {
+                                        d = b.h;
+                                        b = b.j;
+                                        var f;
+                                        if (window.XMLHttpRequest) f =
+                                            new XMLHttpRequest;
+                                        else if (window.ActiveXObject) try {
+                                            f = new ActiveXObject("Msxml2.XMLHTTP")
+                                        } catch (r) {
+                                            try {
+                                                f = new ActiveXObject("Microsoft.XMLHTTP")
+                                            } catch (D) {}
+                                        }
+                                        f && (f.open("POST", d + (-1 == d.indexOf("?") ? "?" : "&") + "url=" + encodeURIComponent(b)), f.setRequestHeader("Content-Type", "application/x-www-form-urlencoded"), f.send(a))
+                                    }
+                                }
+                            }
+
+                            function B() {
+                                var b = {},
+                                    c;
+                                c = document.getElementsByTagName("IMG");
+                                if (!c.length) return {};
+                                var a = c[0];
+                                if (!("naturalWidth" in a && "naturalHeight" in a)) return {};
+                                for (var d = 0; a = c[d]; ++d) {
+                                    var e = a.getAttribute("data-pagespeed-url-hash");
+                                    e && (!(e in b) && 0 < a.width && 0 < a.height && 0 < a.naturalWidth && 0 < a.naturalHeight || e in b && a.width >= b[e].o && a.height >= b[e].m) && (b[e] = {
+                                        rw: a.width,
+                                        rh: a.height,
+                                        ow: a.naturalWidth,
+                                        oh: a.naturalHeight
+                                    })
+                                }
+                                return b
+                            }
+                            var C = "";
+                            u("pagespeed.CriticalImages.getBeaconData", function() {
+                                return C
+                            });
+                            u("pagespeed.CriticalImages.Run", function(b, c, a, d, e, f) {
+                                var r = new y(b, c, a, e, f);
+                                x = r;
+                                d && w(function() {
+                                    window.setTimeout(function() {
+                                        A(r)
+                                    }, 0)
+                                })
+                            });
+                        })();
+
+                        pagespeed.CriticalImages.Run('/mod_pagespeed_beacon', 'https://preview.colorlib.com/theme/archi/index.html', '-ilGEe-FWC', true, false, 'RukyAzanF9M');
+                        //]]>
+                    </script><img src="data:image/png;base64,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"
+                        alt="" data-pagespeed-url-hash="3745329050" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                </div>
+            </div>
+        </div>
+    </div>-->
+
+    <header>
+
+        <div class="header-area header-transparent">
+            <div class="main-header header-sticky">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+
+                        <div class="col-xl-2 col-lg-2 col-md-1">
+                            <div class="logo">
+                                <a href="index.html"><img src="assets/img/logo/logo_sm.png" alt="" data-pagespeed-url-hash="235610925" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
+                            </div>
+                        </div>
+                        <div class="col-xl-9 col-lg-10">
+                            <div class="main-menu black-menu menu-bg-white d-none d-lg-block">
+                                <div class="hamburger hamburger--collapse">
+                                    <div class="hamburger-box">
+                                        <div class="hamburger-inner"></div>
+                                    </div>
+                                </div>
+                                <nav class="hamburger-menu">
+                                    <ul id="navigation">
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="about.html">About</a></li>
+                                        <li><a href="services.html">Services</a></li>
+                                        <li><a href="project.html">Project</a></li>
+                                        <li>
+                                            <a href="blog.html">Blog</a>
+                                            <ul class="submenu">
+                                                <li><a href="blog.html">Blog</a></li>
+                                                <li><a href="blog_details.html">Blog Details</a></li>
+                                                <li><a href="elements.html">Element</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="contact.html">contact</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <!-- TOP CAROUSEL BANNERS -->
+        <div class="slider-area">
+            <div class="slider-full-active owl-carousel custom-dots">
+                <div class="slide-full slider-height d-flex align-items-center" style="background-image:url(assets/img/hero/xh1_hero.png.pagespeed.ic.3a59URGfuE.png)">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-8 col-md-7 col-sm-8">
+                                <div class="slide-full-content">
+                                    <span>Performance de ponta</span>
+                                    <h1>Foco na<br> Precisão</h1>
+                                    <p>Qualidade de ponta onde o produtor precisa.</p>
+                                    <a class="btn" href="#">Entre em contato</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-full d-flex slider-height align-items-center" style="background-image:url(assets/img/hero/xh1_hero2.png.pagespeed.ic.bqAA7GziCl.jpg)">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-8 col-md-7 col-sm-8">
+                                <div class="slide-full-content">
+                                    <span>#1 aritecture in united stare</span>
+                                    <h1>Focus on<br> Design Quality</h1>
+                                    <p>We creating lasting impression through architecture design.</p>
+                                    <a class="btn" href="#">Contact Us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-full d-flex slider-height align-items-center" style="background-image:url(assets/img/hero/xh1_hero.png.pagespeed.ic.3a59URGfuE.png)">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-8 col-md-7 col-sm-8">
+                                <div class="slide-full-content">
+                                    <span>#1 aritecture in united stare</span>
+                                    <h1>Focus on<br> Design Quality</h1>
+                                    <p>We creating lasting impression through architecture design.</p>
+                                    <a class="btn" href="#">Contact Us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <section class="about-area section-padding2">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-10">
+                        <div class="about-caption mb-50">
+
+                            <div class="section-tittle section-tittle2 mb-35">
+                                <span>About Us</span>
+                                <h2>52 Years Of Experience in this area</h2>
+                            </div>
+                            <p>Brook presents your services with flexible, convenient and cdpoe layouts. You can select your favorite layouts & elements for cular ts with unlimited ustomization possibilities. Pixel-perfreplication of the designers is intended.</p>
+                            <a href="about.html" class="btn">About us</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+
+                        <div class="about-img ">
+                            <div class="about-font-img ">
+                                <img src="assets/img/gallery/about1.png" alt="" data-pagespeed-url-hash="618523525" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                            </div>
+                            <div class="about-back-img ">
+                                <img src="assets/img/gallery/about2.png" alt="" data-pagespeed-url-hash="913023446" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="service-area pt-150 pb-150">
+            <div class="service-bg"></div>
+            <div class="container">
+
+                <div class="row d-flex justify-content-center">
+                    <div class="col-xl-7 col-lg-8 col-md-11 col-sm-11">
+                        <div class="section-tittle section-tittle3  text-center mb-90">
+                            <span>Our Services</span>
+                            <h2>We provide best intorior solution for you</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-9">
+                        <div class="services-caption text-center mb-30">
+                            <div class="service-icon">
+                                <i class="flaticon-null"></i>
+                            </div>
+                            <div class="service-cap">
+                                <h4><a href="#">Architecture</a></h4>
+                                <p>Sorem spsum dolor sit amsectetr adipisclit, seddo eiusmod tempr incididunt laborea.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-9">
+                        <div class="services-caption active text-center mb-30">
+                            <div class="service-icon">
+                                <i class="flaticon-null-1"></i>
+                            </div>
+                            <div class="service-cap">
+                                <h4><a href="#">Interior Design</a></h4>
+                                <p>Sorem spsum dolor sit amsectetur adipisclit, seddo eiusmod tempor incididunt ut laborea.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-9">
+                        <div class="services-caption text-center mb-30">
+                            <div class="service-icon">
+                                <i class="flaticon-null-2"></i>
+                            </div>
+                            <div class="service-cap">
+                                <h4><a href="#">Urban Design</a></h4>
+                                <p>Sorem spsum dolor sit amsectetur adipisclit, seddo eiusmod tempor incididunt ut laborea.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="popular-work-area">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-6 col-lg-7 col-md-10 col-sm-10">
+
+                        <div class="section-tittle text-center mb-70">
+                            <span>Nossos produtos</span>
+                            <h2>sempre prontos para atender a missão</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-col-lg-6 col-md-6 col-sm-6">
+                        <div class="single-cat mb-110">
+                            <img src="assets/img/gallery/bdo1_1.png" alt="" data-pagespeed-url-hash="1440130577" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                            <div class="img-cap">
+                                <h4>BD05</h4>
+                                <p>Controle Biológico</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-col-lg-6 col-md-6 col-sm-6">
+                        <div class="single-cat mb-110">
+                            <img src="assets/img/gallery/bdo1_1.png" alt="" data-pagespeed-url-hash="1734630498" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                            <div class="img-cap">
+                                <h4>BDO-MINI</h4>
+                                <p>Controle Biológico</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-col-lg-6 col-md-6 col-sm-6">
+                        <div class="single-cat mb-110">
+                            <img src="assets/img/gallery/bdo1_1.png" alt="" data-pagespeed-url-hash="2029130419" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                            <div class="img-cap">
+                                <h4>Dispenser 001</h4>
+                                <p>Compatível com Phantom x</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-col-lg-6 col-md-6 col-sm-6">
+                        <div class="single-cat mb-110">
+                            <img src="assets/img/gallery/bdo1_1.png" alt="" data-pagespeed-url-hash="2323630340" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                            <div class="img-cap">
+                                <h4>BDO-?</h4>
+                                <p>Aplicação de cotésia</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="experience-area position-relative d-flex align-items-end">
+            <div class="caption-overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-10">
+                        <div class="experience-caption">
+                            <h2>Our best recent popular work here</h2>
+                            <p>Brook presents your services with flexible, convenient and cdpoe layouts. You can select your favorite layouts & elements for cular ts with unlimited ustomization possibilit.</p>
+                            <a href="about.html" class="btn">About us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="team-area section-padding30">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-6 col-lg-7 col-md-10 col-sm-10">
+
+                        <div class="section-tittle text-center mb-70">
+                            <span>Nossa equipe</span>
+                            <h2>Sempre prontos para lhe atender</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
+                        <div class="single-team mb-30">
+                            <div class="team-img">
+                                <img src="assets/img/gallery/team2.png" alt="" data-pagespeed-url-hash="2064484666" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                            </div>
+                            <div class="team-caption">
+                                <h3><a href="#">Gustavo :</a></h3>
+                                <span>Diretor Comercial</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
+                        <div class="single-team mb-30">
+                            <div class="team-img">
+                                <img src="assets/img/gallery/xteam3.png.pagespeed.ic.FQ42DN_v4L.png" alt="" data-pagespeed-url-hash="2358984587" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                            </div>
+                            <div class="team-caption">
+                                <h3><a href="#">Thiago Veronese</a></h3>
+                                <span>Diretor Técnico</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
+                        <div class="single-team mb-30">
+                            <div class="team-img">
+                                <img src="assets/img/gallery/xteam1.png.pagespeed.ic.2aYBj_9Ff3.png" alt="" data-pagespeed-url-hash="1769984745" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                            </div>
+                            <div class="team-caption">
+                                <h3><a href="#">John Doe</a></h3>
+                                <span>Creative derector</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="starups-area testimonial-area fix">
+
+            <div class="starups-img">
+                <div class="play-btn"><a class="popup-video" href="https://www.youtube.com/watch?v=ssBM8JaPMiw"><i class="flaticon-null-3"></i></a></div>
+            </div>
+
+            <div class="starups">
+
+                <div class="h1-testimonial-active">
+
+                    <div class="single-testimonial text-center">
+                        <div class="testimonial-caption ">
+
+                            <div class="testimonial-founder d-flex align-items-center justify-content-center mb-40">
+                                <div class="founder-img">
+                                    <img src="assets/img/gallery/xtestimonial.png.pagespeed.ic.cxinTvg3d9.png" alt="" data-pagespeed-url-hash="3673370992" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                                </div>
+                                <div class="founder-text">
+                                    <span>Sr. João Pereira</span>
+                                    <p>Técnico Aplicação x</p>
+                                </div>
+                            </div>
+
+                            <div class="testimonial-top-cap">
+                                <p>O BDO5 é compatível com a demanda dos meus clientes e consigo produzir com a máxima precisão possível no menor tempo possível.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <section class="home-blog-area section-padding30">
+            <div class="container">
+
+                <div class="row justify-content-center">
+                    <div class="col-xl-5 col-lg-6 col-md-9 col-sm-10">
+                        <div class="section-tittle text-center mb-90">
+                            <span>Recent blog</span>
+                            <h2>All recent articals from us.</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="home-blog-single mb-30">
+                            <div class="blog-img-cap">
+                                <div class="blog-img">
+                                    <img src="assets/img/gallery/home-blog1.png" alt="" data-pagespeed-url-hash="3676210302" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+
+                                    <div class="blog-date text-center">
+                                        <span>24</span>
+                                        <p>Now</p>
+                                    </div>
+                                </div>
+                                <div class="blog-cap">
+                                    <p>| Physics</p>
+                                    <h3><a href="blog_details.html">Footprints in Time is perfect House in Kurashiki</a></h3>
+                                    <a href="blog_details.html" class="more-btn">Read more »</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <div class="home-blog-single mb-30">
+                            <div class="blog-img-cap">
+                                <div class="blog-img">
+                                    <img src="assets/img/gallery/xhome-blog2.png.pagespeed.ic.0tP39WCl7F.png" alt="" data-pagespeed-url-hash="3970710223" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+
+                                    <div class="blog-date text-center">
+                                        <span>24</span>
+                                        <p>Now</p>
+                                    </div>
+                                </div>
+                                <div class="blog-cap">
+                                    <p>| Physics</p>
+                                    <h3><a href="blog_details.html">Footprints in Time is perfect House in Kurashiki</a></h3>
+                                    <a href="blog_details.html" class="more-btn">Read more »</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+
+        <div class="footer-area footer-padding section-bg" data-background="assets/img/gallery/footer_bg.png">
+            <div class="container">
+
+                <div class="footer-top">
+                    <div class="row justify-content-between">
+                        <div class="col-xl-3 col-lg-3 col-md-5 col-sm-6">
+                            <div class="single-footer-caption mb-50">
+                                <div class="single-footer-caption mb-30">
+
+                                    <div class="footer-logo">
+                                        <a href="index.html"><img src="assets/img/logo/logo_sm.png" alt="" data-pagespeed-url-hash="435428853" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
+                                    </div>
+                                    <div class="footer-tittle">
+                                        <div class="footer-pera">
+                                            <p>Alta Aerospace LTDA. Rua Salgado Filho, 53 - Uberlândia/MG CEP 38406-393</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-3 col-sm-5">
+                            <div class="single-footer-caption mb-50">
+                                <div class="footer-tittle">
+                                    <h4>Links rápidos</h4>
+                                    <ul>
+                                        <li><a href="#">Sobre</a></li>
+                                        <li><a href="#"> Produtos e serviços</a></li>
+                                        <li><a href="#"> Newsletter</a></li>
+                                        <li><a href="#"> Contate-nos</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-7">
+                            <div class="single-footer-caption mb-50">
+                                <div class="footer-tittle">
+                                    <h4>Nossos produtos</h4>
+                                    <ul>
+                                        <li><a href="#">BDO-Mini</a></li>
+                                        <li><a href="#">BDO5</a></li>
+                                        <li><a href="#"> Dispensers</a></li>
+                                        <li><a href="#"> Manutenção</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-5 col-sm-7">
+                            <div class="single-footer-caption mb-50">
+                                <div class="footer-tittle">
+                                    <h4>Suporte técnico</h4>
+                                    <ul>
+                                        <li><a href="#">Oficina e Peças de reposição</a></li>
+                                        <li><a href="#">Downloads de software e firmware</a></li>
+                                        <li><a href="#">Garantia</a></li>
+                                        <li><a href="#">Entrega técnica</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <div class="row">
+                        <div class="col-xl-7 col-lg-8 col-md-7">
+                            <div class="footer-copy-right">
+                                <p>
+                                    Copyright &copy;
+                                    <script>
+                                        document.write(new Date().getFullYear());
+                                    </script> Todos os direitos reservados. ALTA AEROSPACE LTDA</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-xl-5 col-lg-4 col-md-5">
+                            <div class="footer-copy-right f-right">
+
+                                <div class="footer-social">
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="https://www.facebook.com/sai4ull"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-behance"></i></a>
+                                    <a href="#"><i class="fas fa-globe"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <div id="back-top">
+        <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
+    </div>
+
+    <script src="https://unpkg.com/modernizr@3.5.0/lib/cli.js"></script>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/popper.min.js+bootstrap.min.js+jquery.slicknav.min.js.pagespeed.jc.Wz-a3LcGaC.js"></script>
+    <script>
+        eval(mod_pagespeed_j2b43gAWSu);
+    </script>
+    <script>
+        eval(mod_pagespeed_YG9$Uocedz);
+    </script>
+
+    <script>
+        eval(mod_pagespeed_RaVuYdmZDC);
+    </script>
+
+    <script src="assets/js/owl.carousel.min.js+slick.min.js.pagespeed.jc.6uPPycK7AP.js"></script>
+    <script>
+        eval(mod_pagespeed_JUsiU9qq5w);
+    </script>
+    <script>
+        eval(mod_pagespeed_r0VOhO5w8c);
+    </script>
+
+    <script src="assets/js/wow.min.js+animated.headline.js+jquery.magnific-popup.js.pagespeed.jc.w8wOmJK4_x.js"></script>
+    <script>
+        eval(mod_pagespeed_J5ODBU1zop);
+    </script>
+    <script>
+        eval(mod_pagespeed_FBR3rUustn);
+    </script>
+    <script>
+        eval(mod_pagespeed_xdp9hW7$$y);
+    </script>
+
+    <script src="./assets/js/gijgo.min.js"></script>
+
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script>
+        eval(mod_pagespeed_HXZzJduJFE);
+    </script>
+    <script>
+        eval(mod_pagespeed_fi2M19oTFF);
+    </script>
+
+    <script>
+        eval(mod_pagespeed_azJwYiAdPh);
+    </script>
+    <script>
+        eval(mod_pagespeed_mujp26XxMk);
+    </script>
+    <script>
+        eval(mod_pagespeed_nz8qxjnrTz);
+    </script>
+    <script>
+        eval(mod_pagespeed_dchtahGdD2);
+    </script>
+
+    <script>
+        eval(mod_pagespeed_x3D68uSvWz);
+    </script>
+    <script>
+        eval(mod_pagespeed_fog_$a_AxU);
+    </script>
+    <script src="assets/js/jquery.validate.min.js"></script>
+    <script>
+        eval(mod_pagespeed_gQIALAHPup);
+    </script>
+    <script>
+        eval(mod_pagespeed___hKtwe99K);
+    </script>
+    <script>
+        eval(mod_pagespeed_qao6dsGyjL);
+    </script>
+
+    <script>
+        eval(mod_pagespeed_GoE6JUYJhf);
+    </script>
+    <script>
+        eval(mod_pagespeed_Dny67TAxo0);
+    </script>
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"7351085eecdc314f","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2022.6.0","si":100}'
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
