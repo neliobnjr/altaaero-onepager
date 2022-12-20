@@ -696,7 +696,7 @@ li {
 }
 
 .section-tittle3 span {
-    color: #fff
+    color: rgb(0, 0, 0)
 }
 
 .section-tittle3 span::before {
