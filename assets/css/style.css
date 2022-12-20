@@ -1294,7 +1294,7 @@ nav.nav-menu-show {
 }
 
 .service-area .service-bg {
-    background-image: url(assets/img/hero/sugarcanefieldup.png);
+    background-image: url('assets/img/hero/sugarcanefieldup.png');
     position: absolute;
     top: 0;
     left: 0;
