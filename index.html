@@ -15,9 +15,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="manifest" href="site.webmanifest">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
-
+    <script type="text/javascript" src="https://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
     <link rel="stylesheet" href="assets/css/A.bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/A.style.css">
+
 </head>
 
 <body>
@@ -222,7 +223,7 @@
                                 </div>
                                 <nav class="hamburger-menu">
                                     <ul id="navigation">
-                                        <li><a href="#">Home</a></li>
+                                        <li><a id='homelink' href="#">Home</a></li>
                                         <!--index.html-->
                                         <li><a id="aboutlink" href="#">Sobre</a></li>
                                         <!--about.html-->
@@ -261,7 +262,7 @@
 
     <main>
         <!-- TOP CAROUSEL BANNERS -->
-        <div class="slider-area">
+        <div class="slider-area" id="home">
             <div class="slider-full-active owl-carousel custom-dots">
                 <div class="slide-full slider-height d-flex align-items-center" style="background-image:url(assets/img/hero/corncrop_banner.jpg)">
                     <div class="container">
@@ -664,11 +665,12 @@
                             <div class="single-footer-caption mb-50">
                                 <div class="footer-tittle">
                                     <h4>Links rápidos</h4>
-                                    <ul>
-                                        <li><a href="#">Sobre</a></li>
-                                        <li><a href="#"> Produtos e serviços</a></li>
-                                        <li><a href="#"> Newsletter</a></li>
-                                        <li><a href="#"> Contate-nos</a></li>
+                                    <ul id="bottom-menu">
+                                        <li><a id="aboutlink" href="#">Sobre</a></li>
+                                        <li><a id="productslink" href="#">Produtos</a></li>
+                                        <li><a id="serviceslink" href="#">Serviços</a></li>
+                                        <li><a href="#">Newsletter</a></li>
+                                        <li><a href="#">Contate-nos</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -707,6 +709,7 @@
                     <div class="row">
                         <div class="col-xl-7 col-lg-8 col-md-7">
                             <div class="footer-copy-right">
+
                                 <p>
                                     Copyright &copy;
                                     <script>
@@ -832,6 +835,12 @@
     }
 
     $("#navigation > li > a").click(function(e) {
+        // Prevent a page reload when a link is pressed
+        e.preventDefault();
+        // Call the scroll function
+        goToByScroll($(this).attr("id"));
+    });
+    $("#bottom-menu > li > a").click(function(e) {
         // Prevent a page reload when a link is pressed
         e.preventDefault();
         // Call the scroll function
