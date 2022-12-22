@@ -924,7 +924,7 @@ nav.nav-menu-show {
 }
 
 .mobile_menu {
-    position: absolute;
+    position: relative;
     right: 0;
     width: 100%;
     z-index: 99
