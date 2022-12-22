@@ -75,8 +75,8 @@
                             </div>
                         </div>
 
-                        <div class="col-12" style="margin-top:-20%">
-                            <div class="mobile_menu" style="margin-top:0;margin-left: 60%; width:30%; display:block; position:relative; float:right"></div>
+                        <div id='mobilemenuover' class="col-12" style="margin-top:-18%;">
+                            <div id="mobilemenu" class="mobile_menu d-block d-lg-block" style="margin-top:0;margin-left: 60%; width:40%; display:block; position:relative; float:right;"></div>
                         </div>
                     </div>
                 </div>
@@ -678,6 +678,16 @@
         // Call the scroll function
         goToByScroll($(this).attr("id"));
     });
+</script>
+<script>
+    function killtext() {
+        $("#mobilemenu > div > a > span.slicknav_menutxt").text("")
+        $("#mobilemenu > div").css('background-color', 'transparent')
+        $("#mobilemenu > div").click(function() {
+            $("#mobilemenu > div > ul").css('background-color', 'black')
+        })
+    }
+    window.onload(killtext())
 </script>
 
 </html>

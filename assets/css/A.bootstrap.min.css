@@ -2559,7 +2559,7 @@ button.close {
 }
 
 .slicknav_menu:after {
-    clear: both;
+    clear: right;
 }
 
 .slicknav_nav li,
@@ -2582,7 +2582,7 @@ button.close {
 }
 
 .slicknav_nav .slicknav_parent-link a {
-    display: inline
+    display: block
 }
 
 .slicknav_menu {
