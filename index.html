@@ -656,6 +656,22 @@
 </body>
 <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
 <script>
+    function killtext() {
+        $("#mobilemenu > div > a > span.slicknav_menutxt").text("")
+        $("#mobilemenu > div").css('background-color', 'transparent')
+        $("#mobilemenu > div").click(function() {
+            $("#mobilemenu > div > ul").css('background-color', 'black')
+        })
+        $("#mobilemenu > div > ul > li:nth-child(1) > a").attr('id', 'homelink')
+        $("#mobilemenu > div > ul > li:nth-child(2) > a").attr('id', 'aboutlink')
+        $("#mobilemenu > div > ul > li:nth-child(3) > a").attr('id', 'productslink')
+        $("#mobilemenu > div > ul > li:nth-child(4) > a").attr('id', 'serviceslink')
+        $("#mobilemenu > div > ul > li:nth-child(5) > a").attr('id', 'contactslink')
+        $("#mobilemenu > div > ul > li:nth-child(6) > a").attr('id', 'newsletterlink')
+    }
+    window.onload(killtext())
+</script>
+<script>
     function goToByScroll(id) {
         // Reove "link" from the ID
         id = id.replace("link", "");
@@ -678,16 +694,44 @@
         // Call the scroll function
         goToByScroll($(this).attr("id"));
     });
+
+    $("#mobilemenu > div > ul > li:nth-child(1) > a").click(function(e) {
+        // Prevent a page reload when a link is pressed
+        e.preventDefault();
+        // Call the scroll function
+        goToByScroll($(this).attr("id"));
+    });
+    $("#mobilemenu > div > ul > li:nth-child(2) > a").click(function(e) {
+        // Prevent a page reload when a link is pressed
+        e.preventDefault();
+        // Call the scroll function
+        goToByScroll($(this).attr("id"));
+    });
+    $("#mobilemenu > div > ul > li:nth-child(3) > a").click(function(e) {
+        // Prevent a page reload when a link is pressed
+        e.preventDefault();
+        // Call the scroll function
+        goToByScroll($(this).attr("id"));
+    });
+    $("#mobilemenu > div > ul > li:nth-child(4) > a").click(function(e) {
+        // Prevent a page reload when a link is pressed
+        e.preventDefault();
+        // Call the scroll function
+        goToByScroll($(this).attr("id"));
+    });
+    $("#mobilemenu > div > ul > li:nth-child(5) > a").click(function(e) {
+        // Prevent a page reload when a link is pressed
+        e.preventDefault();
+        // Call the scroll function
+        goToByScroll($(this).attr("id"));
+    });
+    $("#mobilemenu > div > ul > li:nth-child(6) > a").click(function(e) {
+        // Prevent a page reload when a link is pressed
+        e.preventDefault();
+        // Call the scroll function
+        goToByScroll($(this).attr("id"));
+    });
 </script>
-<script>
-    function killtext() {
-        $("#mobilemenu > div > a > span.slicknav_menutxt").text("")
-        $("#mobilemenu > div").css('background-color', 'transparent')
-        $("#mobilemenu > div").click(function() {
-            $("#mobilemenu > div > ul").css('background-color', 'black')
-        })
-    }
-    window.onload(killtext())
-</script>
+
 
 </html>
